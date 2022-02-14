@@ -1,0 +1,15 @@
+/* 
+Using the .style property, edit the element’s styles in your js to have:
+Font-size: 20px
+Font-weight: lighter
+Font-family: sans-serif
+Color: cornflowerblue
+*/
+
+
+.border {
+    border: 2px solid black;
+    padding: 5px ;
+    margin: 5px ;
+}
+
