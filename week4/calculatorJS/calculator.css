@@ -1,0 +1,38 @@
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2014/09/24/16/28/bricks-459299_1280.jpg);
+}
+
+h2{
+
+	text-align: center;
+	font-size: 35px;
+	font-family: 'Times New Roman', Times, serif;
+}
+* {
+    align-items: center;
+    font-size: 25px;
+    
+    color: #FFF412;
+}
+div {
+    padding: 2%;
+    margin: 2%;
+    align-items: center;
+    text-align: center;
+
+}
+
+button {
+    border: 2px solid black;
+    text-align: center;
+    width: 35px;
+    height:35px;
+    margin-top: 10px;
+    color: black;
+    background-color: bisque;  
+}
+#num1, #num2, #num3, #num4, #num5, #num6, #num7, #num8 {
+    border: 2px solid black;
+    background-color: burlywood; 
+}
