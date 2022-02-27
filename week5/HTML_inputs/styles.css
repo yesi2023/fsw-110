@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    color: blue;
+    
+}
+body{
+    background-color:skyblue;
+}
+* {
+    align-items: center;
+    text-align: left;
+}
+
+.boxLayout {
+    border: 5px solid black;
+    padding: 40px;
+    margin: 15%;
+}
+
+.button {
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    font-variant-caps:all-small-caps;
+    font-size: 20px;
+    color: blue;
+    background-color: white;
+}

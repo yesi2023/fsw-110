@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Inputs</title>
+        <link href="styles.css" rel="stylesheet"/>
+   </head>
+   <body>
+       <h1>NutriSystem</h1>
+       <div id = boxLayout>
+            <form name = "form">
+                First Name: <input type="text" id="firstName" name = "firstName" required/>
+                Last Name: <input type="text" id="lastName" name = "lastName" required/><br>
+
+                Age: <input type="number" id="age" name = "age" required/>
+
+                Gender: 
+                Male<input type="radio" id="gender" value="Male"/> 
+                Female<input type="radio" id="gender" value="Female"/>
+                Gender Neutral<input type="radio" id="gender" value="no comment"/><br>
+
+
+                Have you shopped with us before:
+                Yes<input type="radio" id="question1" value="Yes"/> 
+                No<input type="radio" id="question2" value="No"/><br>
+
+                How likely would you recommend this to a friend:
+                Not likely<input type="radio" id="question3" value="Not likely"/> 
+                Somewhat likely<input type="radio" id="question4" value="Somewhat likely"/>
+                likely<input type="radio" id="question5" value="likely"/><br>
+
+                Destination Location:
+                <select name = "option" required>
+                    <option value="Salinas, California">Salinas, California</option>
+                    <option value="Las Vegas, Nevada">Lass Vegas, Nevada</option>
+                    <option value="Manassas, Virginia">Manassas, Virginia</option>
+                </select><br>
+
+                <h3>Dietary Restrictions:</h3>
+                none<input type="checkbox" id="noDiet" value="None" name="diet"/> 
+                gluten free<input type="checkbox" id="gluten free" value=" gluten free "name ="diet"/> 
+                Vegetarian<input type="checkbox" id="vegetarian" value=" Vegetarian"name="diet"/> 
+                Keto<input type="checkbox" id="Keto" value=" Keto"name="diet"/> 
+
+            
+                <br>
+                <button id = "button" name="submit">Submit</button>
+                
+                 
+            </form>
+        </div>
+        <script src="index.js"></script>
+   </body>
+</html>
