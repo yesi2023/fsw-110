@@ -1,24 +1,24 @@
-const input = document.querySelector("#add");
-const btn = document.querySelector("#btn");
-const list = document.querySelector("#list");
-var el = document.getElementsByTagName("li");
+let addToDoButton = document.getElementById("addToDo");
+let main = document.getElementById("main");
+let inputField = document.getElementById("inputField");
 
-// this function will allow us to add elements when we click the button
-btn.onclick = function () {
-  var txt = input.value;
-  if (txt == "") {
-    alert("you must write something");
-  } else {
-    li = document.createElement("li");
-    li.innerHTML = txt;
-    list.insertBefore(li, list.childNodes[0]);
-    input.value = "";
-  }
-};
+addToDoButton.addEventListener("click", function () {
+  var toDoContainer = document.createElement("div");
+  toDoContainer.classList.add("row");
+  var newItem = document.createElement("div");
+  newItem.classList.add("column");
 
-//this function will allow us to check the clicked elements
-list.onclick = function (ev) {
-  if (ev.target.tagName == "LI") {
-    ev.target.classList.toggle("checked");
-  }
-};
+  var remButton = document.createElement("button");
+
+  newItem.innerText = inputField.value;
+
+  remButton.innerText = "delete";
+  toDoContainer.appendChild(newItem);
+  toDoContainer.appendChild(remButton);
+  main.appendChild(toDoContainer);
+  inputField.value = "";
+
+  remButton.addEventListener("click", function (e) {
+    main.removeChild(toDoContainer);
+  });
+});
